@@ -5,6 +5,12 @@ import Edit from './Edit';
 
 class AllCartStocks extends Component {
   render() {
+    const { stocks } = this.props;
+ 
+    if (stocks.loading) {
+      return <div></div>;
+    }
+
     return (
       <div>
         <h1 className="post_heading">AllCartStocks</h1>
@@ -21,7 +27,9 @@ class AllCartStocks extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    cart: state
+    cart: state,
+    stocks: state.stocks,
+    loading: state.loading,
   }
 }
 

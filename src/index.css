@@ -127,6 +127,20 @@ a:hover {
   font-size:20px;
 }
 
+.form select {
+  font-size:16px;
+  margin: 10px;
+}
+
+input[type=text]{
+  width: 50%;
+  margin: 10px;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
 .post_title {
   text-align:center;
   font-weight:400;

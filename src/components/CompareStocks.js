@@ -31,10 +31,6 @@ class CompareStocks extends Component {
     })
   }
 
-  // componentDidMount() {
-  //  this.props.getStocks();
-  // }
-
   render() {
     const { error, stocks } = this.props;
     let AAPL, GOOGL, AMZN;
